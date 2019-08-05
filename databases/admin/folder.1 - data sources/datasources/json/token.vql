@@ -1,0 +1,7 @@
+﻿# REQUIRES-PROPERTIES-FILE - # Do not remove this comment!
+CREATE OR REPLACE DATASOURCE JSON token
+    FOLDER = '/1 - data sources'
+    ROUTE HTTP 'http.CommonsHttpClientConnection,120000' POST '${databases.admin.folder.1 - data sources.datasources.json.token.ROUTE.HTTP.URL}'
+    AUTHENTICATION OFF
+    PROXY OFF;
+

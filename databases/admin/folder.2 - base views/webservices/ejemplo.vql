@@ -1,0 +1,36 @@
+﻿CREATE OR REPLACE REST WEBSERVICE ejemplo
+    CONNECTION (
+        CHUNKSIZE = 1000
+        CHUNKTIMEOUT = 90000
+        QUERYTIMEOUT = 900000
+        POOLENABLED = false
+        POOLINITSIZE = 0
+        POOLMAXACTIVE = 30
+    )
+    DEFAULTREPRESENTATION = HTML
+    SUPPORTEDREPRESENTATIONS (HTML, XML, JSON)    AUTHENTICATION (OAUTH2 )
+
+    RESOURCES (
+        VIEW ejemplo FIELDS (
+            column_0 : 'text', 
+            column_1 : 'text', 
+            column_2 : 'text', 
+            column_3 : 'text', 
+            column_4 : 'text', 
+            column_5 : 'text', 
+            column_6 : 'text', 
+            column_7 : 'text', 
+            column_8 : 'text', 
+            column_9 : 'text', 
+            column_10 : 'text', 
+            column_11 : 'text', 
+            column_12 : 'text', 
+            column_13 : 'text', 
+            column_14 : 'text'
+        )
+    )
+    OPTIONS ( NULLVALUESASEMPTYXMLELEMENTS = false
+        ALLOW_CORS_ORIGINS (*) ENABLED ) 
+    OPENAPI2 ( API_VERSION = '1.0.0' ) 
+    FOLDER = '/2 - base views';
+
