@@ -16,6 +16,7 @@
         column_14:text (sourcetypeid = '12')
     )
     FOLDER = '/2 - base views'
+    PRIMARY KEY ( 'column_0' , 'column_1' , 'column_2' )
     CACHE OFF
     TIMETOLIVEINCACHE DEFAULT
     ADD SEARCHMETHOD ejemplo(
